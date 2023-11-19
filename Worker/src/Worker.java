@@ -7,15 +7,6 @@ public class Worker {
         this.errorCallback = errorCallback;
     }
 
-    @FunctionalInterface
-    public interface OnTaskDoneListener {
-        void onDone(String result);
-    }
-
-    @FunctionalInterface
-    public interface OnTaskErrorListener {
-        void onError(String error);
-    }
 
     public void start() {
         for (int i = 1; i <= 100; i++) {
